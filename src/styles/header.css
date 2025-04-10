@@ -1,0 +1,74 @@
+/* Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 5rem;
+  background-color: transparent;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Name Styling */
+.header-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+/* Social Icons */
+.header-socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-icon {
+  width: 35px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  .header-name {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-socials {
+    gap: 0.8rem;
+  }
+
+  .social-icon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .header-name {
+    font-size: 1.2rem;
+  }
+
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+}

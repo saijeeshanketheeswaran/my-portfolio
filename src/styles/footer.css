@@ -1,0 +1,120 @@
+/* Footer Section */
+.footer {
+  padding: 2rem 1rem;
+  border-top: 1px solid #ddd;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+/* Footer Container */
+.footer-container {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #333;
+}
+
+/* Footer Title */
+.footer-title {
+  font-size: 1.5rem;
+  color: #ff5722;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Footer Text */
+.footer-text {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Footer Social Media Icons */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Social Media Icons */
+.footer-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Footer Navigation */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer Links */
+.footer-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff5722;
+}
+
+/* Copyright */
+.footer-copyright {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .footer {
+    padding: 3rem 2rem;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-title {
+    font-size: 1.3rem;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+
+  .footer-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.8rem;
+  }
+}

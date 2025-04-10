@@ -1,0 +1,208 @@
+/* Projects Section */
+.projects-section {
+  padding: 5rem 2rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  background: linear-gradient(180deg, #f7fafc 0%, #1a73e879 50%, #f7fafc 100%);
+  color: white;
+}
+
+/* Projects Title */
+.projects-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* Project Card */
+.project-card {
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: inherit;
+}
+
+/* Project Header */
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background-color: #1a73e8b0;
+  padding: 5px 12px;
+  box-sizing: border-box;
+}
+
+/* Mac Buttons */
+.mac-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red {
+  background-color: #ff5f57;
+}
+
+.yellow {
+  background-color: #ffbd2e;
+}
+
+.green {
+  background-color: #00ff26;
+}
+
+/* Address Bar */
+.address-bar {
+  flex-grow: 1;
+  max-width: 70%;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #303030;
+  text-align: center;
+  font-family: 'Arial', Arial, monospace;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Typing Effect (Cursor) */
+.cursor {
+  right: 0;
+  font-weight: bolder;
+  animation: blink 1s infinite step-start;
+  display: inline-block;
+  padding-bottom: 0.75px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Hover Effect */
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .projects-section {
+    padding: 4rem 1.5rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .projects-grid {
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .project-card:hover {
+    transform: scale(1.03);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 3rem 1rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .projects-title {
+    font-size: 1.8rem;
+  }
+
+  .projects-grid {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .project-card:hover {
+    transform: scale(1.02);
+  }
+
+  .address-bar {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 2rem 0.5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .projects-title {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .project-card {
+    border-radius: 8px;
+  }
+
+  .project-card:hover {
+    transform: scale(1.01);
+  }
+
+  .project-header {
+    gap: 8px;
+    padding: 4px 10px;
+  }
+
+  .button {
+    width: 10px;
+    height: 10px;
+  }
+
+  .address-bar {
+    font-size: 0.85rem;
+  }
+}
