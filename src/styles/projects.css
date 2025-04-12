@@ -1,8 +1,7 @@
 /* Projects Section */
 .projects-section {
-  padding: 5rem 2rem;
-  padding-top: 12rem;
-  padding-bottom: 12rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
   background: linear-gradient(180deg, #f7fafc 0%, #1a73e879 50%, #f7fafc 100%);
   color: white;
 }
@@ -21,7 +20,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   align-items: start;
 }
@@ -111,9 +110,21 @@
   }
 }
 
+@keyframes zoomPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.025);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* Hover Effect */
 .project-card:hover {
-  transform: scale(1.05);
+  animation: zoomPulse 1.0s ease-in-out infinite;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 

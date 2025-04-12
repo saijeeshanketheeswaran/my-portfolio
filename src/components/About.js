@@ -8,11 +8,13 @@ const About = () => {
   const skills = [
     { name: 'JavaScript', level: 95 },
     { name: 'HTML', level: 95 },
-    { name: 'SQL', level: 95 },
-    { name: 'React', level: 85 },
-    { name: 'Python', level: 85 },
+    { name: 'React.js', level: 85 },
+    { name: 'SEO', level: 85 },
+    { name: 'CSS', level: 95 },
     { name: 'Java', level: 85 },
+    { name: 'Python', level: 85 },
     { name: 'PHP', level: 85 },
+    { name: 'SQL', level: 95 },
     { name: 'C++', level: 80 },
     { name: 'Angular', level: 75 },
   ];
@@ -47,24 +49,17 @@ const About = () => {
 
   return (
     <section className="about" ref={aboutRef}>
-      <h1 className="about-header">What do i offer?</h1>
+      <h1 className="about-header">What do I offer?</h1>
 
       <div className="about-paragraphs">
         <p>
-          I am a <strong>dedicated web developer</strong> passionate about
+          I am a dedicated <strong>front end developer</strong> passionate about
           creating <strong>functional</strong> and <strong>user-friendly</strong>{' '}
-          digital solutions. My focus is on crafting <em>clean</em> and <em>efficient code</em>{' '}
-          while staying up-to-date with the{' '} <strong>latest technologies</strong>. From designing <span className="highlight">seamless websites</span> to
-          solving intricate programming challenges, I strive to deliver tools that enhance lives and foster connection.
+          digital solutions. My focus is on crafting clean and efficient code{' '}
+          while staying up-to-date with the{' '} <strong>latest technologies</strong>. From designing <span className="highlight"><strong>seamless</strong> and <strong>unique</strong> webpages</span> to
+          solving intricate programming challenges, I strive to deliver solutions that enhance the user experience.
         </p>
       </div>
-
-      <blockquote className="about-quote">
-        <p>
-          "Code is more than just a tool—it is a bridge to connect people and
-          ideas in meaningful ways."
-        </p>
-      </blockquote>
 
       <div className="skills-container">
         <h2>What are my skills?</h2>

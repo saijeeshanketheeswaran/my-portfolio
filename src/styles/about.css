@@ -2,7 +2,7 @@
 .about {
   padding: 150px 25px;
   text-align: center;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -18,7 +18,7 @@
 /* Paragraphs */
 .about-paragraphs p {
   font-size: 1.2rem;
-  line-height: 1.7;
+  line-height: 1.5;
   color: #555;
   margin-bottom: 20px;
   text-align: center;
@@ -32,28 +32,11 @@
   color: #1a73e8;
 }
 
-.about-paragraphs em {
-  font-style: italic;
-  color: #555;
-}
-
-/* Quote */
-.about-quote {
-  font-size: 1.2rem;
-  font-style: italic;
-  color: #555;
-  margin: 40px 0;
-  padding: 20px;
-  position: relative;
-  display: inline-block;
-}
-
 /* Skills Section */
 .skills-container {
   margin-top: 200px;
   text-align: left;
   padding: 0 20px;
-  animation: fadeInUp 1.5s ease-out forwards;
 }
 
 /* Skills Header */
@@ -69,7 +52,7 @@
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
 /* Individual Skill Box */
@@ -129,17 +112,6 @@
   }
   to {
     width: var(--progress-width);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 

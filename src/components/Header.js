@@ -8,10 +8,10 @@ const Header = () => {
     <header className="header">
       <h1 className="header-name">Sai Ketheeswaran</h1>
       <div className="header-socials">
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/saijeeshanketheeswaran" target="_blank" rel="noopener noreferrer">
           <img src={githublogo} alt="GitHub" className="social-icon" />
         </a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://ca.linkedin.com/in/saijeeshanketheeswaran" target="_blank" rel="noopener noreferrer">
           <img src={linkedinlogo} alt="LinkedIn" className="social-icon" />
         </a>
         <a href="mailto:your-email@example.com">

@@ -17,7 +17,7 @@
 .contact-intro {
   font-size: 1.1rem;
   color: #555;
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.5rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -71,7 +71,7 @@
   background: #fff;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 25px 50px #1a73e853
 }
 
 /* Form Group */
@@ -126,6 +126,34 @@ textarea {
 .submit-button:hover {
   background-color: #e64a19;
 }
+
+.form-status {
+  margin-top: 1rem;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.form-status.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.form-status.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 
 /* Responsive Design */
 @media (min-width: 768px) {

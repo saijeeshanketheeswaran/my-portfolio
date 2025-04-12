@@ -1,17 +1,7 @@
 /* Footer Section */
 .footer {
   padding: 2rem 1rem;
-  border-top: 1px solid #ddd;
-  border-radius: 15px 15px 0 0;
   text-align: center;
-  background-color: #f9f9f9;
-}
-
-/* Footer Container */
-.footer-container {
-  max-width: 700px;
-  margin: 0 auto;
-  color: #333;
 }
 
 /* Footer Title */

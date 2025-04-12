@@ -4,10 +4,10 @@ import projectOneImage from '../assets/project-one.jpg';
 
 const projectsData = [
   {
-    title: '5n2',
+    title: '',
     description: 'Description for Project One.',
     link: 'https://google.com',
-    url: '5n2.ca',
+    url: '',
     image: projectOneImage,
   },
   {
@@ -17,20 +17,7 @@ const projectsData = [
     url: 'projecttwo.com',
     image: projectOneImage,
   },
-  {
-    title: 'Project Three',
-    description: 'Description for Project Three.',
-    link: 'https://google.com',
-    url: 'projectthree.com',
-    image: projectOneImage,
-  },
-  {
-    title: 'Project Four',
-    description: 'Description for Project Four.',
-    link: 'https://google.com',
-    url: 'projectfour.com',
-    image: projectOneImage,
-  },
+
 ];
 
 const Projects = () => {
@@ -67,6 +54,8 @@ const Projects = () => {
 
   return (
     <section className="projects-section" id="projects">
+
+      <h1 className="projects-title">Check out my work!</h1>
 
       <div className="projects-grid">
         {projectsData.map((project, index) => (
