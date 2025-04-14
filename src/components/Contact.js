@@ -53,7 +53,6 @@ const Contact = () => {
           </div>
           <button type="submit" className="submit-button">Send Message</button>
 
-          {/* Status Message */}
           {status === "success" && (
             <div className="form-status success">Message sent successfully!</div>
           )}

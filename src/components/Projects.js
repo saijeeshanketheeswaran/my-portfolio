@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/projects.css';
-import projectOneImage from '../assets/project-one.jpg';
+import projectOneImage from '../assets/5n2.png';
+import projectTwoImage from '../assets/portfolio.png'
 
 const projectsData = [
   {
-    title: '',
-    description: 'Description for Project One.',
-    link: 'https://google.com',
-    url: '',
+    title: '5n2',
+    description: '',
+    link: 'https://5n2.ca',
+    url: '5n2.ca',
     image: projectOneImage,
   },
   {
-    title: 'Project Two',
-    description: 'Description for Project Two.',
-    link: 'https://google.com',
-    url: 'projecttwo.com',
-    image: projectOneImage,
+    title: 'Portfolio',
+    description: '',
+    link: '',
+    url: 'Created with React.js.',
+    image: projectTwoImage,
   },
-
 ];
 
 const Projects = () => {
@@ -39,7 +39,7 @@ const Projects = () => {
           } else if (!updated[index].completed) {
             updated[index].completed = true;
           } else {
-            // Restart typing after a complete cycle
+            
             updated[index].url = '';
             updated[index].completed = false;
             charIndex = 0;
@@ -81,6 +81,8 @@ const Projects = () => {
           </a>
         ))}
       </div>
+      
+      <a href="https://github.com/saijeeshanketheeswaran?tab=repositories" target="_blank" rel="noopener noreferrer"><h1 className="projects-other">check other work on Github...</h1></a>
     </section>
   );
 };

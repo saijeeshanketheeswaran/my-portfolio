@@ -10,6 +10,15 @@
   min-height: 85vh;
 }
 
+.hero-profile-image {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px dotted #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
 /* Hero Content */
 .hero-content {
   max-width: 600px;
@@ -109,13 +118,4 @@
     font-size: 0.85rem;
     padding: 8px 16px;
   }
-}
-
-.hero-profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #fff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }

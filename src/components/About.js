@@ -53,7 +53,7 @@ const About = () => {
 
       <div className="about-paragraphs">
         <p>
-          I am a dedicated <strong>front end developer</strong> passionate about
+            I am a dedicated <strong>front end developer</strong> passionate about
           creating <strong>functional</strong> and <strong>user-friendly</strong>{' '}
           digital solutions. My focus is on crafting clean and efficient code{' '}
           while staying up-to-date with the{' '} <strong>latest technologies</strong>. From designing <span className="highlight"><strong>seamless</strong> and <strong>unique</strong> webpages</span> to
