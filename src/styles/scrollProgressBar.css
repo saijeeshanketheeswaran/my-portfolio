@@ -4,7 +4,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 5.0px;
+  height: 5px;
+  scroll-behavior: smooth;
   background-color: transparent;
   z-index: 1000;
 }

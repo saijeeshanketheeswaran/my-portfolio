@@ -6,17 +6,18 @@ const About = () => {
   const aboutRef = useRef(null);
 
   const skills = [
-    { name: 'JavaScript', level: 95 },
-    { name: 'HTML', level: 95 },
-    { name: 'React.js', level: 85 },
-    { name: 'SEO', level: 85 },
-    { name: 'CSS', level: 95 },
-    { name: 'Java', level: 85 },
-    { name: 'Python', level: 85 },
-    { name: 'PHP', level: 85 },
+    { name: 'JavaScript', level: 97 },
+    { name: 'HTML', level: 97 },
+    { name: 'CSS', level: 97 },
     { name: 'SQL', level: 95 },
+    { name: 'React.js', level: 90 },
+    { name: 'SEO', level: 87 },
+    { name: 'Java', level: 87 },
+    { name: 'Python', level: 87 },
+    { name: 'PHP', level: 87 },
     { name: 'C++', level: 80 },
-    { name: 'Angular', level: 75 },
+    { name: 'API Integration', level: 80 },
+    { name: 'Angular', level: 66 },
   ];
 
   useEffect(() => {
@@ -52,7 +53,7 @@ const About = () => {
       <h1 className="about-header">What do I offer?</h1>
 
       <div className="about-paragraphs">
-        <p>
+        <p className={`fade-in-text ${isVisible ? 'visible' : ''}`}>
             I am a dedicated <strong>front end developer</strong> passionate about
           creating <strong>functional</strong> and <strong>user-friendly</strong>{' '}
           digital solutions. My focus is on crafting clean and efficient code{' '}
@@ -62,7 +63,7 @@ const About = () => {
       </div>
 
       <div className="skills-container">
-        <h2>What are my skills?</h2>
+        <h2>What are some of my web development skills?</h2>
         <div className="skills-grid">
           {skills.map((skill) => (
             <div className="skill" key={skill.name}>

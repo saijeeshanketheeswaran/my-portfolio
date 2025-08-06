@@ -15,7 +15,7 @@ const projectsData = [
     title: 'Portfolio',
     description: '',
     link: '',
-    url: 'Created with React.js.',
+    url: '',
     image: projectTwoImage,
   },
 ];
@@ -55,7 +55,7 @@ const Projects = () => {
   return (
     <section className="projects-section" id="projects">
 
-      <h1 className="projects-title">Check out my work!</h1>
+      <h1 className="projects-title">Check out some of my work!</h1>
 
       <div className="projects-grid">
         {projectsData.map((project, index) => (
@@ -82,7 +82,7 @@ const Projects = () => {
         ))}
       </div>
       
-      <a href="https://github.com/saijeeshanketheeswaran?tab=repositories" target="_blank" rel="noopener noreferrer"><h1 className="projects-other">check other work on Github...</h1></a>
+      <h1 className="projects-other"><a className="other-link" href="https://github.com/saijeeshanketheeswaran?tab=repositories" target="_blank" rel="noopener noreferrer">check other work on Github →</a></h1>
     </section>
   );
 };

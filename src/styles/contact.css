@@ -16,6 +16,7 @@
 /* Contact Intro */
 .contact-intro {
   font-size: 1.1rem;
+  font-weight: 100;
   color: #555;
   margin-bottom: 2.5rem;
   max-width: 600px;
@@ -83,9 +84,9 @@
 
 /* Labels */
 .form-group label {
-  font-weight: 500;
+  font-weight: 100;
   color: #333;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Input Fields */
@@ -119,6 +120,7 @@ textarea {
   border: none;
   border-radius: 5px;
   font-size: 1rem;
+  font-weight: 100;
   cursor: pointer;
   transition: background-color 0.3s;
 }

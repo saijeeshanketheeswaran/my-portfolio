@@ -41,11 +41,11 @@ const Contact = () => {
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required />
+            <input type="text" id="name" name="name" placeholder="" required />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required />
+            <input type="email" id="email" name="email" placeholder="" required />
           </div>
           <div className="form-group">
             <label htmlFor="message">Message</label>

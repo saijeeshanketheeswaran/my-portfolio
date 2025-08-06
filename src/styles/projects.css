@@ -2,14 +2,14 @@
 .projects-section {
   padding-top: 15rem;
   padding-bottom: 15rem;
-  background: linear-gradient(180deg, #f7fafc 0%, #1a73e879 50%, #f7fafc 100%);
+  background: linear-gradient(180deg, #f7fafc 0%, #1a73e886 50%, #f7fafc 100%);
   color: white;
 }
 
 /* Projects Title */
 .projects-title {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 100;
   margin-bottom: 40px;
   color: #fff;
   text-align: center;
@@ -17,12 +17,15 @@
 
 .projects-other {
   font-size: 1.75rem;
-  font-weight: 300;
+  font-weight: 100;
   margin-top: 50px;
   color: #fff;
   text-align: center;
-  text-decoration: underline;
 }
+
+.other-link:hover {
+  text-decoration: underline;
+;}
 
 /* Projects Grid */
 .projects-grid {
@@ -44,6 +47,7 @@
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: inherit;
+  animation: zoomPulse 1s ease-in-out infinite;
 }
 
 /* Project Header */
@@ -119,7 +123,7 @@
   }
 }
 
-@keyframes zoomPulse {
+@keyframes zoomPulsehover {
   0% {
     transform: scale(1);
   }
@@ -131,9 +135,21 @@
   }
 }
 
+@keyframes zoomPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.005);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* Hover Effect */
 .project-card:hover {
-  animation: zoomPulse 1.0s ease-in-out infinite;
+  animation: zoomPulsehover 0.75s ease-in-out infinite;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 

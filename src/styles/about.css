@@ -15,21 +15,37 @@
   text-align: center;
 }
 
-/* Paragraphs */
-.about-paragraphs p {
-  font-size: 1.4rem;
-  line-height: 1.75;
-  color: #555;
-  margin-bottom: 20px;
+/* Paragraph Container */
+.about-paragraphs {
+  max-width: 1000px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.about-paragraphs p:not(:last-child) {
-  margin-bottom: 30px;
+/* Paragraph Text */
+.about-paragraphs p { 
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1.75;
+  color: #555;
+  margin-bottom: 20px;
 }
 
+/* Strong Text Highlight */
 .about-paragraphs strong {
   color: #1a73e8;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Fade In Animation */
+.fade-in-text {
+  opacity: 0;
+  transition: opacity 2s ease-out,
+}
+
+.fade-in-text.visible {
+  opacity: 1;
 }
 
 /* Skills Section */
@@ -52,7 +68,7 @@
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 25px;
+  gap: 15px;
 }
 
 /* Individual Skill Box */
@@ -63,13 +79,26 @@
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 12.5px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.12);
+  animation: slight-rotate 1s infinite ease-in-out;
+}
+
+@keyframes slight-rotate {
+  0% {
+    transform: rotate(-.25deg);
+  }
+  50% {
+    transform: rotate(.25deg);
+  }
+  100% {
+    transform: rotate(-.25deg);
+  }
 }
 
 /* Skill Title */
 .skill h3 {
   font-size: 1.25rem;
-  font-weight: 200;
-  color: #333;
+  font-weight: 100;
+  color: grey;
   margin-bottom: 8px;
 }
 
@@ -87,8 +116,8 @@
   height: 100%;
   width: var(--progress-width);
   transition: width 0.5s ease-out;
-  border-radius: 8px;
-  background: linear-gradient(to top, #ff784e, #ff5722 90%);
+  border-radius: 0px;
+  background: linear-gradient(to right, #ff8a67, #f97a54, #ff7146 100%);
 }
 
 .progress.load {

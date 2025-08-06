@@ -16,7 +16,7 @@
 /* Name Styling */
 .header-name {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 100;
   letter-spacing: 1px;
   white-space: nowrap;
 }
@@ -70,5 +70,19 @@
   .social-icon {
     width: 24px;
     height: 24px;
+  }
+}
+
+/* Fade-in Effect */
+.header {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInHeader 1s ease-out forwards;
+}
+
+@keyframes fadeInHeader {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
