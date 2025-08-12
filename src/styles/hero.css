@@ -10,12 +10,13 @@
   min-height: 85vh;
 }
 
+/* Hero Image */
 .hero-profile-image {
-  width: 200px;
-  height: 200px;
+  width: 175px;
+  height: 175px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 2.5px solid #f7f7f7;
+  object-fit:cover;
+  border: 2px solid #f7f7f7;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 

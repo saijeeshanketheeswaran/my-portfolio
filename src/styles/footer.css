@@ -4,17 +4,9 @@
   text-align: center;
 }
 
-/* Footer Title */
-.footer-title {
-  font-size: 1.5rem;
-  color: #ff5722;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
 /* Footer Text */
 .footer-text {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #777;
   margin-bottom: 1.2rem;
   line-height: 1.5;
@@ -31,8 +23,8 @@
 
 /* Social Media Icons */
 .footer-icon {
-  width: 32px;
-  height: 32px;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
   display: block;
 }
@@ -48,14 +40,10 @@
 
 /* Footer Links */
 .footer-link {
-  color: #333;
+  color: #777;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: .75rem;
   transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-  color: #ff5722;
 }
 
 /* Copyright */

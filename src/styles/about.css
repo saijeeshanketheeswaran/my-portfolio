@@ -43,7 +43,6 @@
   opacity: 0;
   transition: opacity 2s ease-out,
 }
-
 .fade-in-text.visible {
   opacity: 1;
 }
@@ -82,15 +81,16 @@
   animation: slight-rotate 1s infinite ease-in-out;
 }
 
+/* Rotate Animation */
 @keyframes slight-rotate {
   0% {
-    transform: rotate(-.25deg);
+    transform: rotate(-.20deg);
   }
   50% {
-    transform: rotate(.25deg);
+    transform: rotate(.20deg);
   }
   100% {
-    transform: rotate(-.25deg);
+    transform: rotate(-.20deg);
   }
 }
 
