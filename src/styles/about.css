@@ -78,20 +78,6 @@
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 12.5px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.12);
-  animation: slight-rotate 1s infinite ease-in-out;
-}
-
-/* Rotate Animation */
-@keyframes slight-rotate {
-  0% {
-    transform: rotate(-.20deg);
-  }
-  50% {
-    transform: rotate(.20deg);
-  }
-  100% {
-    transform: rotate(-.20deg);
-  }
 }
 
 /* Skill Title */

@@ -16,7 +16,7 @@ const Hero = () => {
         <p>
           A passionate front end developer focused on creating beautiful and functional applications.
         </p>
-        <a href="#projects" className="hero-button">View My Work</a>
+        <a href="#projects" className="hero-button">View My Projects</a>
       </div>
     </section>
   );
